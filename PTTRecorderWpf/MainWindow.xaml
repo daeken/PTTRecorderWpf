@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PTTRecorderWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="PTTRecorder" Height="350" Width="525">
     <Grid>
-        
+		<Grid.RowDefinitions>
+			<RowDefinition Height="1*"></RowDefinition>
+			<RowDefinition Height="7*"></RowDefinition>
+			<RowDefinition Height="2*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<TextBox Name="Path" FontSize="22" Grid.Row="0"></TextBox>
+		<Button Name="PTT" Grid.Row="1">Push To Record</Button>
+		<Button Name="DeleteLast" Grid.Row="2">Delete Last</Button>
     </Grid>
 </Window>
